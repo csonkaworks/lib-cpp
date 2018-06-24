@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="CompileAll_Project1.exe"/>
+    <OBJFILES value="CompileAll_Project1.obj crc16.obj WinExit.obj readline.obj compares.obj 
+      F_lib.obj RDCONFIG.obj proc.obj procw32.obj NULLTSTR.obj TAES.obj sha2.obj 
+      TIni.obj TmdbusRTU.obj serPortEnum.obj TLog.obj &quot;\\vmware-host\Shared Folders\U\design\PROJECTS\lib-cpp\csvparser.obj&quot;"/>
+    <RESFILES value="CompileAll_Project1.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="VaCommb5.lib"/>
+    <SPARELIBS value="VCL50.lib VaCommb5.lib VCLX50.lib"/>
+    <PACKAGES value="VCL50.bpi VCLX50.bpi bcbsmp50.bpi dclocx50.bpi bcb97axserver50.bpi"/>
+    <PATHCPP value=".;\\vmware-host\Shared Folders\U\design\PROJECTS\lib-cpp"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="CompileAll_Project1.cpp"/>
+    <INCLUDEPATH value="&quot;\\vmware-host\Shared Folders\U\design\PROJECTS\lib-cpp&quot;;c:\borland\SerCommVCL\;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;\\vmware-host\Shared Folders\U\design\PROJECTS\lib-cpp&quot;;c:\borland\SerCommVCL\;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=21
+Release=1
+Build=635
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1038
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=Csonka Gábor E.V.
+FileDescription=
+FileVersion=1.21.1.635
+InternalName=Just for compile all libraries
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=GerontoElixirCureSystem
+ProductVersion=1.21.1.1
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=10
+Item0=\\vmware-host\Shared Folders\U\design\PROJECTS\lib-cpp;c:\borland\SerCommVCL\;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=c:\borland\SerCommVCL\;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\..\SerCommVCL;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;
+Item3=$(BCB)\SerCommVCL;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;..\SerCommVCL
+Item4=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;..\SerCommVCL
+Item5=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;u:\CppPrj\SerCommVCL
+Item6=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item7=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;U:\CppPrj\Lib
+Item8=U:\CppPrj\SerCommVCL;U:\CppPrj\Lib;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\sercommvcl\;$(BCB)\include;$(BCB)\include\vcl
+Item9=..\sercommvcl;..;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\sercommvcl\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=10
+Item0=\\vmware-host\Shared Folders\U\design\PROJECTS\lib-cpp;c:\borland\SerCommVCL\;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj
+Item1=c:\borland\SerCommVCL\;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj
+Item2=$(BCB)\..\SerCommVCL;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;
+Item3=$(BCB)\SerCommVCL;$(BCB)\Lib;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;..\SerCommVCL
+Item4=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;..\SerCommVCL
+Item5=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;u:\CppPrj\SerCommVCL
+Item6=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj
+Item7=C:\Program Files\Borland\CBuilder5\SerCommVCL\;C:\Program Files\Borland\CBuilder5\Lib\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;U:\CppPrj\Lib
+Item8=U:\CppPrj\SerCommVCL;U:\CppPrj\Lib;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\sercommvcl\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item9=..\sercommvcl;..;C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\sercommvcl\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=U:\CppPrj\Lib
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+  </IDEOPTIONS>
+</PROJECT>

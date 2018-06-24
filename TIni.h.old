@@ -1,0 +1,36 @@
+//---------------------------------------------------------------------------
+// Szerzõ: Csonka Gábor okl. villamosmérnök, 2005.
+// Hierarchia: TObject -- TINIRW
+//---------------------------------------------------------------------------
+
+#ifndef TIni_H
+#define TIni_H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Menus.hpp>
+#include <ExtCtrls.hpp>
+#include <inifiles.hpp>
+//---------------------------------------------------------------------------
+class TINIRW : public TObject
+{
+private:	// User declarations
+        char inifile[1024];
+public:		// User declarations
+        TIniFile *ini;
+	char msg[1024];
+        void __fastcall TestIni(void);
+        virtual void __fastcall GetIni(void);
+        virtual void __fastcall SaveIni(void);
+        bool __fastcall SectionExists(AnsiString section);
+        virtual void __fastcall AfterConstruction();
+        virtual void __fastcall BeforeDestruction();
+
+        __fastcall TINIRW(char *f);                  //Call it with NULL to use the application's name
+};
+//---------------------------------------------------------------------------
+// extern TINIRW *IniRW;       Csak definíció. Nem hozunk létre objektumpéldányt.
+//---------------------------------------------------------------------------
+#endif
